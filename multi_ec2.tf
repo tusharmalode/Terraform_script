@@ -3,7 +3,7 @@ resource "aws_instance" "count" {
   instance_type = "t3.micro"
   key_name      = "ansi-key"
   tags = {
-    Name = "demo ${count.index+1}"
+    Name = "demo ${count.index + 1}"
   }
   count = 2
 
